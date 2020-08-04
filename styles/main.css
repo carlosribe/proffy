@@ -1,5 +1,4 @@
 /* CSS: Cascading Style Sheets */
-
 :root {
     /*variaves do css*/
     --color-background: #F0F0F7;
@@ -25,34 +24,37 @@
     /* tamanho da fonte padão: 16px - 100% - 1rem */
     font-size: 60%; /* controle das medidas rem */
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html,
 body {
-    height: 100vh; /* altura */
+    height: 100vh; /* height = altura */
 }
-
 body {
     background: var(--color-background);
     display: flex;
     align-items: center;
     justify-content: center;    
 }
-
 body,
 input,
 button,
 textarea{
-    font: 500 1.6rem Poppins;
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 1.6rem ;
     color: var(--color-text-base)
 }
-
 #container {
-    width: 90vw;
+    width: 90vw; /* width = largura */
     max-width: 700px;
+}
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%;
+    }
 }
