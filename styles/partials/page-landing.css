@@ -104,8 +104,6 @@
         "button button texting";
         column-gap: 87px;
         row-gap: 86px;
-        
-
     }
 
     .logo-container{
@@ -119,6 +117,10 @@
         height: 127px;
     }
 
+    .logo-container h2 {
+        font: 100 2.5rem Poppins;
+    }
+
     .hero-image {
         grid-area: image;
         height: 350px;
@@ -127,7 +129,13 @@
         grid-area:  button;
         justify-content: flex-start;
         margin: 0;
-    }   
+    }
+
+    .buttons-container a {
+        width: 25rem;
+        height: 8rem;
+    }
+
     .total-connections {
         grid-area: texting;
         justify-self: end;

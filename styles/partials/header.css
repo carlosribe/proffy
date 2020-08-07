@@ -32,18 +32,26 @@
     position: relative;
 }
 
-.page-header .header-content strong {
+.page-header .header-content h1 {
     font: 700 3.6rem Archivo;
     line-height: 4.2rem;
     color: var(--color-title-in-primary);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.page-header .header-content  p {
-    max-width: 30rem;
+.page-header .header-content  h2{
     font-size: 1.6rem;
     line-height: 2.6rem;
     color: var(--color-text-in-primary);
     margin-top: 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 @media (min-width:700px) {
