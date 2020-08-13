@@ -36,7 +36,7 @@
             </div>
         </header>
         <main>
-           <form action=""id="create-class">
+           <form action="/save-classes"id="create-class" method="POST">
                <fieldset>
                    <legend>Seus dados</legend>
 
@@ -75,7 +75,7 @@
                        <label for="cost">Custa da sua hora/aula
                            <small>(R$)</small>
                        </label>
-                       <input type="cost" id="cost" type="number" required>
+                       <input name="cost" type="cost" id="cost" type="number" required>
                    </div>
                </fieldset>
                <fieldset id="schedule-items">
@@ -86,7 +86,7 @@
                    <div class="schedule-item">
                         <div class="select-block">
                             <label for="weekday">Dia da semana</label>
-                            <select name="weekday" id="weekday">
+                            <select name="weekday[]" required>
                                 <option value="">Selecione uma opção</option>
                                 {%for weekday in weekdays %}
                                     <option value="{{loop.index0}}" >
